@@ -1,13 +1,79 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background-image: url("https://wallpaperaccess.com/full/2384075.jpg");
+  background-color: green;
+}
+.answer :hover {
+  cursor: pointer;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.card {
+  background-image: url("https://wallpapercave.com/wp/wp2835925.png");
+}
+
+.button-submit :hover {
+  font-size: 2rem;
+}
+
+.button-submit {
+  width: 100%;
+  height: 50px;
+}
+
+.inputText {
+  width: 100%;
+}
+
+.loader {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transform: -webkit-translate(-50%, -50%);
+  transform: -moz-translate(-50%, -50%);
+  transform: -ms-translate(-50%, -50%);
+  color: darkred;
+}
+
+.question {
+  margin-top: 15px;
+  margin-left: 25px;
+  height: auto;
+}
+
+.questionText {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.questionContent {
+  margin-top: 100px;
+}
+
+.answer :hover {
+  font-size: 1.9rem;
+}
+
+.answer {
+  margin-bottom: 30px;
+  border-bottom: 1px solid blue;
+  font-size: 1.5rem;
+}
+
+.answerq {
+  margin-bottom: 30px;
+  border-bottom: 1px solid blue;
+  font-size: 1.52rem;
+}
+
+.selected {
+  color: rgb(33, 121, 194);
+  font-weight: bold;
+}
+
+.correct {
+  color: rgb(17, 218, 17);
+}
+
+.wrong {
+  color: rgb(218, 17, 17);
 }

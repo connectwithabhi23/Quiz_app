@@ -1,24 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import React from "react";
+import Container from "@mui/material/Container";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import QuestionCategory from "./pages/QuestionCategory";
+import Questions from "./pages/Questions";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container>
+      <BrowserRouter>
+        <Routes>
+          <Route
+            path="/"
+            element={<QuestionCategory></QuestionCategory>}
+          ></Route>
+          <Route
+            path="/q/:cat/:dif/:no"
+            element={<Questions></Questions>}
+          ></Route>
+        </Routes>
+      </BrowserRouter>
+    </Container>
   );
 }
 
